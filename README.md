@@ -1,6 +1,6 @@
 # quarto-typst-flyer
 
-A Quarto extension that uses Typst to create an NBIS-branded flyer
+A Quarto extension that uses Typst to create an NBIS-branded PDF flyer
 
 <img src="preview.webp" width="400px">
 
