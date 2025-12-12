@@ -137,8 +137,8 @@
       pad(top: 6pt, grid(
         columns: (1fr, 1fr),
         column-gutter: 12pt,
-        align(left + bottom, text(size: font-footer, fill: palette-text, footer-left)),
-        align(right + bottom, text(size: font-footer, fill: palette-text, footer-right)),
+        align(left + bottom, text(size: font-footer, fill: palette-text, sanitize-text(footer-left))),
+        align(right + bottom, text(size: font-footer, fill: palette-text, sanitize-text(footer-right))),
       )),
     )
   }
