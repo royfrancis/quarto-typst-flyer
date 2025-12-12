@@ -1,0 +1,36 @@
+---
+subtitle: "NBIS • TRAINING"
+title: "Workshop On Data Analysis"
+description: |
+  Join us for an in-depth workshop on data analysis techniques and tools. \
+  This workshop is designed for researchers and professionals looking to enhance their data analysis skills.
+content: |
+  ### Workshop Overview
+
+  This workshop will cover various data analysis methods, including statistical analysis, data visualization, and machine learning techniques. Participants will have hands-on sessions to apply the concepts learned.
+
+  ### Who Should Attend?
+
+  This workshop is ideal for researchers, data scientists, and professionals in related fields who want to improve their data analysis capabilities.
+date-range: "10-15 June 2026"
+location: "Uppsala, Sweden"
+info: "www.website.com/workshop"
+deadline: "03 May 2026"
+bg-image:
+  path: "assets/background.png"
+banner-image:
+  path: "assets/banner.png"
+banner-height: 5cm
+logo-image:
+  path: "assets/logo.png"
+logo-height: 1cm
+footer-left: "2026 • NBIS"
+footer-right: "education@nbis.se"
+font-size: 13pt
+color-text: "#1D293D"
+color-info: "#E9F2D1"
+format:
+  nbis-flyer-typst:
+    keep-typ: true
+    font-paths: fonts
+---

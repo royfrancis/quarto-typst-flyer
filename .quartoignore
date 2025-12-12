@@ -1,0 +1,10 @@
+.git
+.github
+.gitignore
+.Rhistory
+docs
+README.md
+LICENSE
+preview.jpg
+index.pdf
+index.typ
