@@ -1,4 +1,5 @@
 #let default-color-text = rgb("#1D293D")
+#let default-color-code = rgb("#E4E4E7")
 #let default-color-info = rgb("#E9F2D1")
 
 #let default-font-size = 13pt
@@ -137,8 +138,8 @@
       pad(top: 6pt, grid(
         columns: (1fr, 1fr),
         column-gutter: 12pt,
-        align(left + bottom, text(size: font-footer, fill: palette-text, sanitize-text(footer-left))),
-        align(right + bottom, text(size: font-footer, fill: palette-text, sanitize-text(footer-right))),
+        align(left + bottom, text(size: font-footer, fill: palette-text, sanitize(footer-left))),
+        align(right + bottom, text(size: font-footer, fill: palette-text, sanitize(footer-right))),
       )),
     )
   }
@@ -167,6 +168,18 @@
     set block(below: 0.5em)
     it
   }
+
+  // Inline code styling (Pandoc emits inline code as raw, non-block elements)
+  let inline-code = body => box(
+    fill: rgb(default-color-code),
+    inset: (x: 4pt, y: 4pt),
+    baseline: 4pt,
+    radius: 3pt,
+    stroke: none,
+    body,
+  )
+
+  show raw.where(block: false): it => inline-code(it)
 
   let info-chip = (label, value) => {
     if value == none {
