@@ -16,13 +16,7 @@ quarto use template royfrancis/quarto-typst-flyer
 quarto render index.qmd
 ```
 
-To modify parameters;
-
-```
-quarto render index.qmd --metadata title:"Your Flyer Title"
-```
-
-## Flyer metadata
+## Options
 
 The Typst template accepts the following top-level fields:
 
@@ -44,6 +38,12 @@ The Typst template accepts the following top-level fields:
 - `color-info` (color or hex string) – Background color for the info chip blocks
 - `footer-left` (string) – Left-aligned footer text (e.g., year or organization)
 - `footer-right` (string) – Right-aligned footer text (e.g., contact email)
+
+To modify parameters;
+
+```
+quarto render index.qmd --metadata title:"Your Flyer Title" --metadata date-range:"1-5 July 2026" --metadata location:"Online" --metadata info:"www.new-website.com/workshop" --metadata deadline:"01 June 2026" --metadata font-size:14pt --metadata footer-right:"bla@bla.se"
+```
 
 ---
 
